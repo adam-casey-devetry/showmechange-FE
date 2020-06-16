@@ -1,2 +1,2 @@
-# showmechange-FE
+# Show Me Change-FE
 frontend repo for ShowMeChange
