@@ -1,8 +1,7 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import City from './City.png';
-//import { isCompositeComponentWithType } from 'react-dom/test-utils';
+import ListOfStates from './ListOfStates';
 
 function App() {
   return (
@@ -12,14 +11,9 @@ function App() {
         <p>
           Show Me Change
         </p>
-        <a
-         
+        <ListOfStates/>
           
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
+       
       </header>
     </div>
   );
