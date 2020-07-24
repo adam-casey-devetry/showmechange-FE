@@ -30,17 +30,19 @@ export default function StatesList() {
         }
     }
     return ( 
+        <body bgcolor = "white">
         <div> 
                 <ul>
+                  
                     <font color = "orange">
                     {stateArrayItemsOrange}
                     </font>
                     <font color= "black">
                     {StateArrayItemsBlack}
                     </font>
-                
+                    
                 </ul>
         </div>
-
+        </body>
     );
 }
