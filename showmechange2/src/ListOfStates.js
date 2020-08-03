@@ -23,22 +23,36 @@ export default function StatesList() {
         //StateArrayItemsBlack.push(<li>{property}</li>)
         let myValue = listOfStates[property]
         if (myValue === 'orange') {
-            stateArrayItemsOrange.push(<li>{property}</li>)
+            stateArrayItemsOrange.push(property)
         }
         else {
-            StateArrayItemsBlack.push(<li>{property}</li>)
+            StateArrayItemsBlack.push(property)
         }
     }
+    stateArrayItemsOrange.sort();
+    StateArrayItemsBlack.sort();
+    let stateArrayItemsOrange2 = []
+
+    for (const property of stateArrayItemsOrange) {
+        stateArrayItemsOrange2.push(<li>{property}</li>)
+    }
+
+    let StateArrayItemsBlack2 = []
+
+    for (const property of StateArrayItemsBlack) {
+        StateArrayItemsBlack2.push(<li>{property}</li>)
+    }
+
     return ( 
         <body bgcolor = "white">
         <div> 
                 <ul>
                   
                     <font color = "orange">
-                    {stateArrayItemsOrange}
+                    {stateArrayItemsOrange2}
                     </font>
                     <font color= "black">
-                    {StateArrayItemsBlack}
+                    {StateArrayItemsBlack2}
                     </font>
                     
                 </ul>
