@@ -31,6 +31,7 @@ export default function StatesList() {
     }
     stateArrayItemsOrange.sort();
     StateArrayItemsBlack.sort();
+    
     let stateArrayItemsOrange2 = []
 
     for (const property of stateArrayItemsOrange) {
